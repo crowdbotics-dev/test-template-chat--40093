@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from chat.models import Message,ThreadMember,MessageAction,ThreadAction,ForwardedMessage,Thread
+from chat.models import ForwardedMessage,Message,MessageAction,Thread,ThreadAction,ThreadMember
 
 class ForwardedMessageSerializer(serializers.ModelSerializer):
 

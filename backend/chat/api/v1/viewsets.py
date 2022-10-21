@@ -1,6 +1,6 @@
 from rest_framework import authentication
-from chat.models import Message,ThreadMember,MessageAction,ThreadAction,ForwardedMessage,Thread
-from .serializers import MessageSerializer,ThreadMemberSerializer,MessageActionSerializer,ThreadActionSerializer,ForwardedMessageSerializer,ThreadSerializer
+from chat.models import ForwardedMessage,Message,MessageAction,Thread,ThreadAction,ThreadMember
+from .serializers import ForwardedMessageSerializer,MessageSerializer,MessageActionSerializer,ThreadSerializer,ThreadActionSerializer,ThreadMemberSerializer
 from rest_framework import viewsets
 
 class ForwardedMessageViewSet(viewsets.ModelViewSet):
